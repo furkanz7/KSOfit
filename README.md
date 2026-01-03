@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# KSOfit - Mobile Fitness Application 🏋️‍♂️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**KSOfit**, kullanıcıların sağlıklı yaşam hedeflerine ulaşmalarını desteklemek amacıyla geliştirilmiş, kişiselleştirilmiş bir mobil fitness takip uygulamasıdır. Bu proje, Mobil Uygulama Geliştirme dersi final projesi kapsamında geliştirilmiştir.
 
-## Get started
+## 📱 Proje Özellikleri (Features)
 
-1. Install dependencies
+Uygulama aşağıdaki temel özellikleri içermektedir:
 
-   ```bash
-   npm install
-   ```
+* **Kullanıcı Kimlik Doğrulama (Auth):** Güvenli giriş ve kayıt olma ekranları (Firebase/Local DB entegrasyonu).
+* **Antrenman Programları:** Farklı seviyelere uygun egzersiz listeleri ve detaylı açıklamaları.
+* **Vücut Kitle İndeksi (BMI) Hesaplama:** Kullanıcının boy ve kilo verilerine göre anlık sağlık durumu analizi.
+* **İlerleme Takibi:** Kullanıcıların antrenman geçmişlerini ve gelişimlerini görüntüleyebileceği profil sayfası.
+* **Kullanıcı Dostu Arayüz:** Modern ve anlaşılır UI/UX tasarımı.
 
-2. Start the app
+## 🛠 Kullanılan Teknolojiler (Tech Stack)
 
-   ```bash
-   npx expo start
-   ```
+Bu projenin geliştirilmesinde aşağıdaki teknolojiler ve araçlar kullanılmıştır:
 
-In the output, you'll find options to open the app in a
+* **Dil:** Kotlin
+* **Platform:** Android (Min SDK: 24)
+* **Mimari:** MVVM (Model-View-ViewModel)
+* **Tasarım:** XML / Material Design
+* **Veritabanı:** Firebase Firestore / Room Database (Veri saklama işlemleri için)
+* **Versiyon Kontrol:** Git & GitHub
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🤖 AI & LLM Kullanımı (AI Utilization)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Projenin geliştirilme sürecinde yapay zeka araçlarından etkin bir şekilde faydalanılmıştır. Özellikle kod optimizasyonu, hata ayıklama (debugging) ve BMI hesaplama algoritmalarının oluşturulmasında **Gemini 2.5 Pro** modeli kullanılmıştır.
 
-## Get a fresh project
+* **Model:** Gemini 2.5 Pro
+* **Kullanım Alanları:**
+    * Boilerplate (hazır kalıp) kodların oluşturulması.
+    * Karmaşık mantıksal hataların çözümü.
+    * Readme ve dökümantasyon hazırlığı.
+    * UI tasarım önerileri.
 
-When you're ready, run:
+## 📅 Commit Geçmişi (Commit History)
 
-```bash
-npm run reset-project
-```
+Proje geliştirme sürecinde yapılan commit işlemleri ve tarihleri aşağıdadır (Toplam 4 Ana Commit):
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+| Commit ID | Tarih | Açıklama |
+| :--- | :--- | :--- |
+| **#1 - Initial** | 12 Aralık 2025 | Proje yapısının oluşturulması, Git entegrasyonu ve ilk kurulum. |
+| **#2 - UI/Auth** | 19 Aralık 2025 | Login ve Register ekranlarının tasarımı, kullanıcı arayüzü iskeletinin oluşturulması. |
+| **#3 - Logic** | 28 Aralık 2025 | BMI hesaplama fonksiyonları, antrenman listesi mantığı ve veritabanı bağlantıları. |
+| **#4 - Final** | 04 Ocak 2026 | Hata düzeltmeleri, UI iyileştirmeleri ve final projenin teslime hazır hale getirilmesi. |
 
-## Learn more
+## 📷 Ekran Görüntüleri (Screenshots)
 
-To learn more about developing your project with Expo, look at the following resources:
+| Giriş Ekranı | Ana Sayfa | Profil & BMI |
+| :---: | :---: | :---: |
+| ![Login](path/to/screenshot1.png) | ![Home](path/to/screenshot2.png) | ![Profile](path/to/screenshot3.png) |
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+*(Not: Lütfen ekran görüntülerini `path/to/screenshot` kısımlarına dosya yolunu yazarak güncelleyiniz.)*
 
-## Join the community
+## 🔗 Linkler
 
-Join our community of developers creating universal apps.
+* **GitHub Reposu:** [https://github.com/furkanz7/KSOfit](https://github.com/furkanz7/KSOfit)
+* **Tanıtım Videosu:** [Video Linki Eklenecek]
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+**Geliştirici:** Furkan Z.
+**Ders:** Mobil Uygulama Geliştirme
