@@ -68,21 +68,14 @@ Proje, belirli kilometre taşlarını içeren planlı bir süreçte geliştirilm
 Uygulamanın çalışan son sürümünden alınan ekran görüntüleri:
 
 <p align="center">
-  <img src="docs/images/screenshot_login.png" width="30%" alt="Giriş Ekranı"/>
-  <img src="docs/images/screenshot_home.png" width="30%" alt="Ana Sayfa ve BMI"/>
-  <img src="docs/images/screenshot_profile.png" width="30%" alt="Profil Ekranı"/>
+  <img src="docs/images/giris_ekrani.png" width="30%" alt="Giriş Ekranı"/>
+  <img src="docs/images/ana_sayfa.png" width="30%" alt="Ana Sayfa ve BMI"/>
+  <img src="docs/images/profil.png" width="30%" alt="Profil Ekranı"/>
 </p>
 
 <p align="center">
     <em>(Soldan sağa: Giriş Ekranı, Ana Sayfa & BMI Göstergesi, Profil Sayfası)</em>
 </p>
-
-
-## 📺 Tanıtım Videosu (Video Demonstration)
-
-Uygulamanın kullanım senaryolarını içeren tanıtım videosuna aşağıdaki linkten ulaşabilirsiniz:
-
-[👉 **Video Linki Buraya Gelecek** (YouTube vb.) 👈]
 
 ---
 
