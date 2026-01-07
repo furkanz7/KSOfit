@@ -97,6 +97,26 @@ Projenin geliştirme sürecinin **%40'ında**, kod kalitesini optimize etmek ve 
 > *BMI hesaplama algoritmasında karşılaşılan edge-case (sınır durum) hatalarının tespiti ve `ConstraintLayout` zincirleme yapılarının optimize edilmesi Gemini ile sağlanmıştır.*
 
 ---
+## 📅 Versiyon Kontrol ve Geliştirme Süreci (Version Control History)
+
+Proje, Git versiyon kontrol sistemi kullanılarak adım adım geliştirilmiştir. Aşağıda projenin başlangıç tarihini ve tüm geliştirme sürecini gösteren kanıtlar yer almaktadır.
+
+### 1. İlk Commit Tarihi (Initial Commit Proof)
+Projenin oluşturulduğu ve ilk dosyaların eklendiği tarihi gösteren ekran görüntüsü:
+
+<p align="center">
+  <img src="docs/images/initial_commit_date.png" width="80%" alt="Initial Commit Date Proof"/>
+</p>
+<p align="center"><em>Şekil 1: Projenin başlangıç tarihini doğrulayan ilk commit kaydı.</em></p>
+
+
+### 2. Tam Commit Geçmişi (Complete Commit History)
+Proje boyunca yapılan tüm geliştirmeleri, hata düzeltmelerini ve eklenen özellikleri içeren commit geçmişinin tamamı:
+
+<p align="center">
+  <img src="docs/images/full_commit_history.png" width="80%" alt="Complete Commit History"/>
+</p>
+<p align="center"><em>Şekil 2: Geliştirme sürecini gösteren detaylı commit geçmişi.</em></p>
 
 ## 📅 Commit Geçmişi (Development Timeline)
 
