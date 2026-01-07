@@ -8,28 +8,42 @@ import { View } from 'react-native';
 import { SettingsProvider } from '../providers/SettingsContext';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync().catch(() => { });
+console.log('[Layout] JS Bundle Executing, calling preventAutoHideAsync');
+//SplashScreen.preventAutoHideAsync().catch((e) => console.warn('[Layout] preventAutoHideAsync error:', e));
 
 export default function RootLayout() {
     const [loaded, error] = useFonts({
         ...Ionicons.font,
     });
 
+    // Debug logging
     useEffect(() => {
-        if (error) throw error;
-    }, [error]);
+        console.log('[Layout] Layout mounted');
+        console.log('[Layout] Fonts loaded:', loaded);
+        console.log('[Layout] Font error:', error);
+    }, [loaded, error]);
 
     useEffect(() => {
-        if (loaded) {
-            SplashScreen.hideAsync().catch(() => { });
+        async function prepare() {
+            try {
+                if (loaded || error) {
+                    console.log('[Layout] Attempting to hide splash screen...');
+                    await SplashScreen.hideAsync().catch((e) => console.warn('[Layout] hideAsync error:', e));
+                    console.log('[Layout] Splash screen hidden request sent');
+                }
+            } catch (e) {
+                console.warn('[Layout] prepare error:', e);
+            }
         }
-    }, [loaded]);
+        prepare();
+    }, [loaded, error]);
 
-    // Safety timeout: If stuff takes too long (>3s), hide splash anyway to prevent bundling hang perception
+    // Safety timeout: If stuff takes too long (>5s), hide splash anyway to prevent bundling hang perception
     useEffect(() => {
         const timer = setTimeout(() => {
-            SplashScreen.hideAsync().catch(() => { });
-        }, 3000);
+            console.log('[Layout] Safety timeout triggered (5s)');
+            SplashScreen.hideAsync().catch((e) => console.warn('[Layout] Timeout hideAsync error:', e));
+        }, 5000);
         return () => clearTimeout(timer);
     }, []);
 
